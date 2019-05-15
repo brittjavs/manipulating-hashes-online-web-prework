@@ -13,11 +13,10 @@
     }
   }
 
-  contacts.each do |person, data|
-    if person == "Freddy Mercury"
-      data.each do |attribute, value|
+  contacts["Freddy Mercury"].each do |attribute, value|
       if attribute == :favorite_icecream_flavors
-          value.delete_if {|flavor| flavor == "strawberry"}
+        value.delete_if do |flavor|
+
         end
       end
     end
